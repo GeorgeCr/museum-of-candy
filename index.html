@@ -8,12 +8,40 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Flex Box</title>
   </head>
+
   <body>
-    <h1>ceva</h1><h1>altceva</h1>
     <div class="container">
-        <h1 class="text-primary">I <span class="text-info">am</span> an h1</h1>
+        <h1 class="text-center display-4">Flexbox</h1>
+        <div class="border border-dark d-flex justify-content-start align-items-end" style="height: 200px">
+          
+          <!-- justify-content-*
+          start - both buttons are pushed left
+          center - both buttons are pushed in the center
+          end - both buttons are pushed to the right
+          between - the buttons are separated one from another, leaving room for content between them
+          around - the buttons make room between and around them 
+          -->
+          
+          <!-- justify-content is used for telling the position either from left to right, or the other way around
+          while align-items is used for the other axis (Oy), meaning from top - bottom or bottom - top -->
+            <button class="btn btn-info btn-lg">LARGE</button>
+            <button class="btn btn-warning">SMALL</button>
+        </div>
+
+      <div class="border border-dark d-flex flex-row-reverse justify-content-end align-items-start" style="height: 200px">
+          <button class="btn btn-info btn-lg">LARGE</button>
+          <button class="btn btn-warning">SMALL</button>
+      </div>
+      
+      <div class="border border-dark d-flex flex-column justify-content-end align-items-start" style="height: 200px">
+        <button class="btn btn-info btn-lg">LARGE</button>
+        <button class="btn btn-warning">SMALL</button>
+      </div> 
+      <!-- flex column changes the point of axis, the main focus is Oy now, meaning the start is the top when talking about justify -->
+
+
     </div>
 
     <!-- Optional JavaScript -->
